@@ -39,10 +39,10 @@ def func_passgen2(request):
     nums='1234567890'
     the_length=int(request.GET.get("length",'8'))
 
-    if request.GET.get("uppercase"):#splleing 
+    if request.GET.get("uppercase"):#splleing must be same with password.html
         chars.extend(''.join(chars).upper())
         onlyupper='upper'
-    if request.GET.get("numbers"):
+    if request.GET.get("numbers"): #splleing must be same with password.html
         chars.extend(nums)
         onlynum='num'
 
